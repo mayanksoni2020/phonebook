@@ -1,0 +1,91 @@
+.container{
+    padding: 20px;
+}
+.div-one-inside{
+    background: aqua;
+    padding: 10px 20px;
+    border: 1px solid black;
+    text-align: center;
+}
+.div-two-inside{
+    background: black;
+    border: 1px solid black;
+    padding: 30px 40px;
+}
+.div-two-inside input[type=text] {
+  padding: 6px;
+  /* margin-top: 8px; */
+  font-size: 17px;
+  border: none;
+}
+.div-two-inside .search-bar button {
+  /* float: right; */
+  padding: 6px 10px;
+  /* margin-top: 8px; */
+  /* margin-right: 16px; */
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.div-two-inside .search-bar button:hover {
+  background: #ccc;
+}
+.search-bar{
+    text-align: center;
+}
+.dropdown{
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    /* min-width: 160px; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.show {
+    display: block;
+}
+.details-container {
+    padding: 10px;
+    margin: 15px;
+    border: 1px solid black;
+}
+.card-body .row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+#accordion {
+    margin-bottom: 10px;
+    padding: 2px 35px;
+}
+.div-three{
+    padding: 0px 2rem;
+}
+.div-three-inside{
+    background: black;
+    border: 1px solid black;
+    padding: 20px 10px;
+}
+.div-three .row{
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-left: 30rem;
+}
+.pagination-div{
+    margin-right: 12rem;
+}
+.add-button{
+    padding: 8px;
+}
+.add-phn, .add-email{
+    cursor: pointer;
+    color: white;
+}
