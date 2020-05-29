@@ -201,23 +201,63 @@
                                       <div class="col-sm-10" style="display: inline-block; padding: 0px;">
                                       <input type="text" class="form-control" id="phn" placeholder="Enter Phone Number" name="phn" required>
                                       </div>
-                                      <div class="col-sm-1" style="display: inline-block; padding: 0px 1rem;">
+                                      <div class="col-sm-1 phn-add" style="display: inline-block; padding: 0px 1rem;">
                                         <span class="add-phn"><i class="fa fa-plus-circle"></i></span>
                                       </div>
                                       <div class="valid-feedback">Valid.</div>
                                       <div class="invalid-feedback">Please fill out this field.</div>
                                   </div>
+                                  <div class="form-group" id="add-phn" style="display: none">
+                                      <div class="col-sm-10" style="display: inline-block; padding: 0px;">
+                                      <input type="text" class="form-control" id="phn" placeholder="Enter Phone Number" name="phn" required>
+                                      </div>
+                                      <div class="col-sm-1 phn-del" style="display: inline-block; padding: 0px 1rem;">
+                                        <span class="add-phn"><i class="fa fa-times-circle"></i></span>
+                                      </div>
+                                      <div class="valid-feedback">Valid.</div>
+                                      <div class="invalid-feedback">Please fill out this field.</div>
+                                  </div>
+                                  <script>
+                                    $(document).ready(function(){
+                                        $(".phn-add").click(function(){
+                                            $("#add-phn").css("display","block");
+                                        });
+                                        $(".phn-del").click(function(){
+                                            $("#add-phn").css("display","none");
+                                        });
+                                    });
+                                  </script>
                                   <div class="form-group">
                                       <label for="uname"> Email:</label><br>
                                       <div class="col-sm-10" style="display: inline-block; padding: 0px;">
                                         <input type="text" class="form-control" id="email" placeholder="Enter Email" name="email" required> 
                                       </div>
-                                      <div class="col-sm-1" style="display: inline-block; padding: 0px 1rem;">
+                                      <div class="col-sm-1 email-add" style="display: inline-block; padding: 0px 1rem;">
                                         <span class="add-email"><i class="fa fa-plus-circle"></i></span>
                                       </div>
                                       <div class="valid-feedback">Valid.</div>
                                       <div class="invalid-feedback">Please fill out this field.</div>
-                                  </div></br>
+                                  </div>
+                                  <div class="form-group" id="add-email" style="display: none">
+                                      <div class="col-sm-10" style="display: inline-block; padding: 0px;">
+                                        <input type="text" class="form-control" id="email" placeholder="Enter Email" name="email" required> 
+                                      </div>
+                                      <div class="col-sm-1 email-del" style="display: inline-block; padding: 0px 1rem;">
+                                        <span class="add-email"><i class="fa fa-times-circle"></i></span>
+                                      </div>
+                                      <div class="valid-feedback">Valid.</div>
+                                      <div class="invalid-feedback">Please fill out this field.</div>
+                                  </div>
+                                  <script>
+                                    $(document).ready(function(){
+                                        $(".email-add").click(function(){
+                                            $("#add-email").css("display","block");
+                                        });
+                                        $(".email-del").click(function(){
+                                            $("#add-email").css("display","none");
+                                        });
+                                    });
+                                  </script>
                                   <div class="form-group">
                                       <!-- <button type="button" class="btn btn-success btn-block" onclick="index.php" name="button">Submit</button> -->
                                       <input onclick="index.php" class="btn btn-success btn-block" id="btn" type="submit" name="submit" value="SAVE" style="font-size: 1.2rem; letter-spacing: 1px; font-weight: bold;"/>

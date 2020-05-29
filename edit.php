@@ -127,7 +127,7 @@ if( isset( $_GET['editid'])) {
           $(".delete").fadeIn("1500");
           //Append a new row of code to the "#items" div
           $("#email").append(
-            '<div class="form-group" id="newemail"><br><div class="next-phn col-sm-10"  style="display: inline-block; padding: 0px;"><input id="textinput" name="textinput" type="text" placeholder="Enter Email" class="form-control"></div><div class="col-sm-1" style="display: inline-block; padding: 0px 1rem;"><button class="delete btn button-white uppercase"><span class="add-email"><i class="fa fa-times-circle"></i></span></button></div></div>'
+            '<div class="form-group" id="newemail"><br><div class="next-phn col-sm-10"  style="display: inline-block; padding: 0px;"><input id="textinput" name="textinput" type="text" placeholder="Enter Email" class="form-control"></div><div class="col-sm-1" style="display: inline-block; padding: 0px 1rem;"><button class="delete btn button-white uppercase" style="color: white;"><span class="add-email"><i class="fa fa-times-circle"></i></span></button></div></div>'
           );
         });
         $("body").on("click", ".delete", function(e) {
