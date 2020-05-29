@@ -59,6 +59,11 @@ For limiting the responses till '4' I had used the pagination concept which beco
 ![AddContact](AddContact.png)
 
 #### AddContact Description:-
-For adding new contacts to the diary their is a float button created by which you can add as many new contacts you want with simplicity.
+For adding new contacts to the diary their is a float button created by which you can add as many new contacts you want with simplicity. I had used bootstrap modal for creating new contact.
+
+![Database](Database.png)
+
+#### Database Description:-
+For storing all the data I had used MySQL as a database server. It is easy to use in PHP and used widely.
 
 # Thank You
